@@ -1,4 +1,4 @@
-package _01_java_util_concurrent.Executor;
+package _01_java_util_concurrent.Executors;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
