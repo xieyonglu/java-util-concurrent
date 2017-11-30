@@ -1,4 +1,4 @@
-package _02_java_util_concurrent_atomic.AtomicReference;
+package java_util_concurrent_automic.atomicreference;
 
 import java.util.concurrent.atomic.AtomicReference;
 

@@ -1,4 +1,4 @@
-package _02_java_util_concurrent_atomic.AtomicLongArray;
+package java_util_concurrent_automic.atomiclongarray;
 
 import java.util.concurrent.atomic.AtomicLongArray;
 

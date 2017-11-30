@@ -1,4 +1,4 @@
-package _03_java_util_concurrent_locks.ReentrantLock;
+package java_util_concurrent_locks.reentrantlock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
@@ -8,7 +8,7 @@ public class ReenrantLockTest {
 	
 	private int count = 0;
 	
-	private Lock lock = new ReentrantLock(); // 参数默认false，不公平锁
+	private Lock lock = new ReentrantLock(); // 鍙傛暟榛樿false锛屼笉鍏钩閿�
 	
 	private void read() {
 		try {
