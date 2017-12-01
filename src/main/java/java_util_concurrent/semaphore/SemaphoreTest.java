@@ -36,11 +36,11 @@ public class SemaphoreTest {
 						semaphore.acquire();
 						
 						System.out.println("index----->" + index);
-						
-						// 访问完后，释放 ，如果屏蔽下面的语句，则在控制台只能打印5条记录，之后线程一直阻塞
-						semaphore.release();
 					} catch (InterruptedException e) {
 						e.printStackTrace();
+					} finally {
+						// 访问完后，释放 ，如果屏蔽下面的语句，则在控制台只能打印5条记录，之后线程一直阻塞
+						semaphore.release();
 					}
 				}
 			};

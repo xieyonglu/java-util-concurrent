@@ -4,7 +4,7 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * <h1>’§¿∏</h1>
+ * <h1>Ê†ÖÊ†è</h1>
  * @author yonglu.xie
  * @date 2017/11/30
  *
