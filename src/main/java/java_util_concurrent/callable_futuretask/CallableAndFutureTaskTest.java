@@ -4,6 +4,11 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
+/**
+ * <h1>Callable: 产生结果，Future: 拿回结果</h1>
+ * @author yonglu.xie
+ *
+ */
 public class CallableAndFutureTaskTest {
 
 	public static void main(String[] args) {

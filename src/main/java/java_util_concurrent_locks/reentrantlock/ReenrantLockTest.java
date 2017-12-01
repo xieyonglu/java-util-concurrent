@@ -8,14 +8,14 @@ public class ReenrantLockTest {
 	
 	private int count = 0;
 	
-	private Lock lock = new ReentrantLock(); // 鍙傛暟榛樿false锛屼笉鍏钩閿�
+	private Lock lock = new ReentrantLock();
 	
 	private void read() {
 		try {
 			if (lock.tryLock(5, TimeUnit.SECONDS)) {
 				lock.lock();
 				try {
-					System.out.println("count----->" + count);
+					System.out.println("Read count----->" + count);
 				} catch (Exception e) {
 
 				} finally {
@@ -33,6 +33,7 @@ public class ReenrantLockTest {
 				lock.lock();
 				try {
 					count++;
+					System.out.println("Write count----->" + count);
 				} catch (Exception e) {
 
 				} finally {
