@@ -1,4 +1,4 @@
-package java_util_concurrent.executors;
+package java_util_concurrent.executors_executorservice;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -12,6 +12,7 @@ public class ExecutorTest {
 
 		ExecutorService singleThread = Executors.newSingleThreadExecutor();
 
+		// ScheduledExecutorService
 		ExecutorService scheduledThreadPool = Executors.newScheduledThreadPool(3);
 
 		run(fixedThreadPool);

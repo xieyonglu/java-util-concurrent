@@ -38,6 +38,7 @@ public class ThreadPoolExecutorTest {
 
 }
 
+
 class MyTask implements Runnable {
     private int taskNum;
 
@@ -45,7 +46,8 @@ class MyTask implements Runnable {
         this.taskNum = num;
     }
 
-    @Override
+    @SuppressWarnings("static-access")
+	@Override
     public void run() {
         System.out.println("正在执行task "+taskNum);
         try {
