@@ -15,6 +15,7 @@ import java.util.concurrent.Future;
  *
  */
 public class ForkJoinTest {
+	
 	public static void main(String[] args) {
 		long beginTime = System.nanoTime();
 		System.out.println("The sum from 1 to 1000 is " + sum(1, 1000));
