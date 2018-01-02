@@ -16,6 +16,7 @@ public class ThreadLocalRandomTest {
 		Random r2 = new Random(50);// 种子为50的对象
 		Random r3 = new Random(50);// 种子为50的对象
 		System.out.println("r2.nextInt():" + r2.nextInt() + "-------r3.nextInt():" + r3.nextInt());// 如果两个Random对象种子数相同，那么他们生成的结果将是一样。可以使用当前时间最为种子：System.currentTimeMillis()
+		
 		System.out.println("---------------多线程环境下使用ThreadLocalRandom类，用法跟Random类基本类似---------------------");
 		ThreadLocalRandom tlr = ThreadLocalRandom.current();
 		System.out.println(tlr.nextInt(10, 50));// 生成一个10~50之间的随机数

@@ -32,5 +32,8 @@ public class CompletionServiceTest {
 				e.printStackTrace();
 			}  
         }
+        
+        //
+        threadPool.shutdown();
     }
 } 

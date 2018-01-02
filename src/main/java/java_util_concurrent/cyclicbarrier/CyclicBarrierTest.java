@@ -5,6 +5,7 @@ import java.util.concurrent.CyclicBarrier;
 
 /**
  * <h1>栅栏</h1>
+ * 
  * @author yonglu.xie
  * @date 2017/11/30
  *
@@ -23,12 +24,14 @@ public class CyclicBarrierTest {
 		
 		System.out.println("==Begin==");
 		for(int i=0; i<NUM; i++) {
+			final int index = i;
 			new Thread(new Runnable() {
 				@Override
 				public void run() {
-					System.out.println("XXX---Reach--");
+					System.out.println(index + "---Reach--");
 					try {
 						cyclicBarrier.await(); //
+//						System.out.println("==End End==");
 					} catch (InterruptedException | BrokenBarrierException e) {
 						e.printStackTrace();
 					}
