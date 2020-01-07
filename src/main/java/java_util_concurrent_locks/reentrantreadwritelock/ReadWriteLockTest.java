@@ -36,7 +36,6 @@ class ReadWrite {
 	 * @param data
 	 */
 	public void put(Object data) {
-
 		/* 上写锁 */
 		rwlock.writeLock().lock();
 
